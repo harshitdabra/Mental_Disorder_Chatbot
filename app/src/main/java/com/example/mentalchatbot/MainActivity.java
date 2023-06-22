@@ -1,4 +1,4 @@
-package com.example.easychatgpt;
+package com.example.mentalchatbot;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.example.easychatgpt.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -97,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonBody.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/completions")
-                .header("Authorization","Bearer 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")
+                .header("Authorization","Bearer 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")
                 .post(body)
                 .build();
 

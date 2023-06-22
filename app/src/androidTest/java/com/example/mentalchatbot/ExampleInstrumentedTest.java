@@ -1,4 +1,4 @@
-package com.example.easychatgpt;
+package com.example.mentalchatbot;
 
 import android.content.Context;
 
