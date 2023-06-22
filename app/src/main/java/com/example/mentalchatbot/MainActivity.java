@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonBody.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/completions")
-                .header("Authorization","Bearer YOUR_API_KEY")
+                .header("Authorization","Bearer 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")
                 .post(body)
                 .build();
 
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 }else{
-                    addResponse("Failed to load response due to "+response.body().toString());
+                    addResponse("Failed to load response due to "+response.body().string());
                 }
             }
         });
